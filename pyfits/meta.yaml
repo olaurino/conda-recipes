@@ -1,0 +1,27 @@
+package:
+  name: pyfits
+  version: "3.3.0"
+
+source:
+  fn: pyfits-3.3.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyfits/pyfits-3.3.tar.gz
+
+build:
+  number: 1
+  script: python setup.py install
+
+requirements:
+  build:
+   - setuptools
+   - python 2.7.*
+   - d2to1
+   - stsci_distutils
+   - numpy
+
+  run:
+   - python
+   - numpy
+
+about:
+  home: http://www.stsci.edu/institute/software_hardware/pyfits/
+  summary: PyFITS provides an interface to FITS formatted files in the Python scripting language and PyRAF, the Python-based interface to IRAF.   

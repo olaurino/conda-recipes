@@ -1,0 +1,23 @@
+package:
+  name: sampy
+  version: "1.2.1"
+
+source:
+  fn: sampy-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/s/sampy/sampy-1.2.1.tar.gz
+
+build:
+  number: 1
+  script: python setup.py install
+
+requirements:
+  build:
+   - setuptools
+   - python
+
+  run:
+   - python
+
+about:
+  home: http://pythonhosted.org//sampy/
+  summary: SAMPy is an IVOA SAMP (Simple Application Messaging Protocol) messaging system implementation in Python.

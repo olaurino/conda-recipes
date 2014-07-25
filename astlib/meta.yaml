@@ -1,0 +1,28 @@
+package:
+  name: astlib
+  version: "0.7.0"
+
+source:
+  fn: astLib-0.7.0.tar.gz
+  url: http://downloads.sourceforge.net/project/astlib/astlib/0.7.0/astLib-0.7.0.tar.gz
+
+build:
+  number: 1
+  script: python setup.py install
+
+requirements:
+  build:
+   - python 2.7.*
+   - setuptools
+
+  run:
+   - python 2.7.*
+   - pyfits
+   - numpy
+   - scipy
+   - matplotlib
+
+about:
+  home: http://astlib.sourceforge.net/
+  summary: astLib is a set of Python modules that provides some tools for research astronomers
+   
