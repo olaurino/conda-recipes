@@ -1,0 +1,18 @@
+package:
+  name: ds9
+  version: "7.2"
+
+source:
+  fn: ds9.darwinsnowleopard.7.2.tar.gz # [osx]
+  url: http://ds9.si.edu/download/darwinsnowleopard/ds9.darwinsnowleopard.7.2.tar.gz # [osx]
+  fn: ds9.linux.7.2.tar.gz # [linux32]
+  url: http://ds9.si.edu/download/linux/ds9.linux.7.2.tar.gz # [linux32]
+  fn: ds9.linux64.7.2.tar.gz # [linux64]
+  url: http://ds9.si.edu/download/linux64/ds9.linux64.7.2.tar.gz # [linux64] 
+
+build:
+  number: 1
+
+about:
+  home: http://ds9.si.edu
+  summary: SAOImage DS9 is an astronomical imaging and data visualization application   

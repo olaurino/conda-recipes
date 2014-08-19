@@ -1,0 +1,18 @@
+package:
+  name: xpa 
+  version: "2.1.14"
+
+source:
+  fn: xpa.darwinsnowleopard.2.1.14.tar.gz # [osx]
+  url: http://ds9.si.edu/download/darwinsnowleopard/xpa.darwinsnowleopard.2.1.14.tar.gz # [osx]
+  fn: xpa.linux.2.1.14.tar.gz # [linux32]
+  url: http://ds9.si.edu/download/linux/xpa.linux.2.1.14.tar.gz # [linux32]
+  fn: xpa.linux64.2.1.14.tar.gz # [linux64]
+  url: http://ds9.si.edu/download/linux64/xpa.linux64.2.1.14.tar.gz # [linux64] 
+
+build:
+  number: 1
+
+about:
+  home: http://ds9.si.edu/site/XPA.html
+  summary: XPA interface to SAOImage DS9   
